@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk add --no-cache unzip ca-certificates
 
-ADD https://github.com/pocketbase/pocketbase/releases/download/v0.22.12/pocketbase_0.22.12_linux_amd64.zip /tmp/pb.zip
+ADD https://github.com/pocketbase/pocketbase/releases/download/v0.39.5/pocketbase_0.39.5_linux_amd64.zip /tmp/pb.zip
 RUN unzip /tmp/pb.zip -d /pb/
 
 COPY ./pb_data /pb/pb_data
